@@ -1,0 +1,20 @@
+
+<h1 class="text-center">All the Restaurants</h1>
+
+<div class="container police">
+ <div class="row">
+<% @restaurants.each do |r| %>
+   <div class="col-xs-12 col-sm-6 col-md-4">
+   <%= link_to restaurant_path(r) do %>
+  <%= render "card", restaurant: r %>
+  <% end %>
+  <%= link_to 'Show', restaurant_path(r), class: "btn btn-primary margin-top-5"%>  <%= link_to 'Delete', restaurant_path(r), method: :delete, class: "btn btn-primary margin-top-5"%>
+    </div> -->
+<% end %>
+
+
+ </div>
+
+
+ <%= link_to 'New Restaurant', new_restaurant_path, class: "btn btn-primary", id: "new_restaurant_btn" %>
+

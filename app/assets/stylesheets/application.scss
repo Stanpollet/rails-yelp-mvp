@@ -1,0 +1,29 @@
+// Graphical variables
+@import "config/variables";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS
+@import "layout/index";
+@import "components/index";
+@import "pages/index";
+@import "vendor/index";
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+#new_restaurant_btn {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+}
+
+.margin-top-5 {
+  margin-top: 5px;
+}
